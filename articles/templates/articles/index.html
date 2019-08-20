@@ -8,6 +8,7 @@
     {{ article.id }} <br>
     {{  article.title  }} <br>
     {{  article.created_at  }}
+    <a href="/articles/{{ article.pk }}">글보러가기</a>
     <hr>
     {% endfor %}
   </ul>
