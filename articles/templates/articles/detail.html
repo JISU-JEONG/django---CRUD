@@ -4,9 +4,10 @@
 <h1>{{ article.id }}번 글</h1>
 <h2>{{ article.title }}</h2>
 <p>작성일자 : {{ article.created_at }}</p>
-<p>수정일자 : {{ article.updated_at }}</p>
+<p>수정일자 : {{ article.update_at }}</p>
 <hr>
 <p>{{ article.context }}</p>
 <a href="/articles/">목록으로</a>
+<a href="/articles/{{ article.pk }}/edit/">수정</a>
 <a href="/articles/{{ article.pk }}/delete/">[X]</a>
 {% endblock %}
